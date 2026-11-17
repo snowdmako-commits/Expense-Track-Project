@@ -17,3 +17,13 @@ def validateTitle(title):
 
     return title
 
+def validateAmount(amount):
+    try:
+        amount = float(amount)
+    except ValueError:
+        invalidExpense("Amount must be a number!")
+
+    if amount <= 0:
+        invalidExpense("Amount must be greater than 0!")
+
+    return amount 
