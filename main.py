@@ -1,4 +1,4 @@
-from expenses import addExpense ,getAllExpenses,updateExpense,searchExpense,deleteExpense,totalExpenses
+from expenses import addExpense ,getAllExpenses,updateExpense,searchExpense,deleteExpense
 from validation import CATEGORIES
 from reports import exportToCSV
 
