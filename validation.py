@@ -27,3 +27,11 @@ def validateAmount(amount):
         invalidExpense("Amount must be greater than 0!")
 
     return amount 
+
+def validateCategory(category):
+    category = category.strip().capitalize()
+
+    if not category:
+        invalidExpense("Category cannot be empty!")
+
+    return category
