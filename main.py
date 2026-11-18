@@ -1,6 +1,6 @@
-from expenses import addExpense ,getAllExpenses,updateExpense,searchExpense,deleteExpense,totalExpenses
+from expenses import *
 from validation import CATEGORIES
-from reports import exportToCSV
+from reports import *
 
 def showMenu():
     print("=" * 40)
@@ -82,5 +82,4 @@ def main():
         except (ValueError, LookupError) as e:
             print("Error:", e)
 
-if __name__ == "__main__":
-    main()
+main()
